@@ -1,3 +1,9 @@
+//layout.pug
+//Non-generated elements Written by Mark Sporich
+//Student# 200399323
+//Site: IT Company Portfolio
+//Serves as the "skeleton" layout of each page in the website
+
 doctype html
 html
   head
@@ -8,4 +14,9 @@ html
   body
     include partials/header.pug
     block content
-  script(src="/public/javascripts/bootstrap.min.js")
+    include partials/footer.pug
+  //Adding JQuery from a CDN
+  script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+  script(src="/javascripts/bootstrap.min.js")
+  //Adding JQuery script
+  script(src="/javascripts/functions.js")
